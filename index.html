@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#050505" />
+  <meta name="description" content="Deva Bright D — fresher video editor skilled in Adobe Premiere Pro and CapCut. Reels, sports edits, cinematic videos and social media content." />
+  <title>Deva Bright D | Video Editor</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== SVG ICON SPRITE (used with <use href="#id">) ===== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-scissors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88M14.47 14.48 20 20M8.12 8.12 12 12"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></symbol>
+      <symbol id="i-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3z"/></symbol>
+      <symbol id="i-film" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 3v18M17 3v18M3 12h18M3 7.5h4M3 16.5h4M17 16.5h4M17 7.5h4"/></symbol>
+      <symbol id="i-ball" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M6 5c3.5 4 3.5 10 0 14M18 5c-3.5 4-3.5 10 0 14"/></symbol>
+      <symbol id="i-caption" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M6 11h4M6 15h7M14 11h4"/></symbol>
+      <symbol id="i-color" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="5"/><circle cx="15" cy="9" r="5"/><circle cx="12" cy="15" r="5"/></symbol>
+      <symbol id="i-sound" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></symbol>
+      <symbol id="i-trans" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h14l-3-3M20 17H6l3 3"/></symbol>
+      <symbol id="i-motion" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3 2 17h14z"/><circle cx="17" cy="16" r="5"/></symbol>
+      <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="1.5" y="5" width="14" height="14" rx="2"/><path d="m22.5 7-7 5 7 5z"/></symbol>
+      <symbol id="i-export" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
+      <symbol id="i-play-solid" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- Page-load curtain (cinematic transition) -->
+  <div class="curtain" aria-hidden="true"></div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="header">
+    <div class="wrap header-in">
+  <a href="#home" class="brand" aria-label="Deva Bright D – home">
+
+    <span class="brand-mark">
+        <img src="video/image/logo.jpg" alt="Logo">
+    </span>
+
+    <span class="brand-name">Deva Bright D</span>
+
+</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">My Edits</a>
+        <a href="#raw-final">Raw → Final</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+<section class="hero" id="home">
+
+  <!-- FULL BACKGROUND VIDEO -->
+  <div class="hero-video">
+    <video
+      src="video/Virat.mp4"
+      autoplay
+      muted
+      loop
+      playsinline>
+    </video>
+  </div>
+
+  <!-- HERO CONTENT -->
+  <div class="wrap hero-content">
+
+    <p class="hero-name line">
+      <span>Deva Bright D</span>
+    </p>
+
+    <h1 class="hero-title">
+
+      <span class="line">
+        <span>VIDEO</span>
+      </span>
+
+      <span class="line">
+        <span class="outline">EDITOR</span>
+      </span>
+
+    </h1>
+
+    <p class="hero-sub line">
+      <span>Premiere Pro | CapCut</span>
+    </p>
+
+    <p class="hero-tag line">
+      <span>
+        "Turning raw footage into engaging visual stories."
+      </span>
+    </p>
+
+    <div class="hero-btns">
+
+      <a href="#work" class="btn btn-primary">
+        VIEW MY WORK
+      </a>
+
+      <a href="#contact" class="btn btn-ghost">
+        CONTACT ME
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ===== EDITING TIMELINE ===== -->
+<div class="hero-foot" aria-hidden="true">
+    <div class="wrap">
+        <div class="tl">
+
+            <div class="tl-ruler"></div>
+
+            <div class="tl-track">
+                <i style="left:1%;width:16%"></i>
+                <i style="left:19%;width:9%"></i>
+                <i style="left:30%;width:22%"></i>
+                <i style="left:54%;width:12%"></i>
+                <i style="left:68%;width:30%"></i>
+            </div>
+
+            <div class="tl-track tl-gold">
+                <i style="left:8%;width:20%"></i>
+                <i style="left:40%;width:14%"></i>
+                <i style="left:60%;width:24%"></i>
+            </div>
+
+            <div class="tl-track tl-audio">
+                <i style="left:0;width:38%"></i>
+                <i style="left:40%;width:58%"></i>
+            </div>
+
+            <div class="tl-head"></div>
+
+        </div>
+    </div>
+
+    <div class="strip"></div>
+</div>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+      <div class="wrap about-grid">
+      <div class="portrait reveal">
+    <div class="portrait-frame">
+        <img src="video/image/deva.jpg" alt="My Photo">
+    </div>
+</div>
+
+        <div class="about-text reveal">
+          <h2 class="title">ABOUT ME</h2>
+          <p class="lead">I’m a fresher video editor passionate about creating engaging and cinematic video content. I have hands-on knowledge of Adobe Premiere Pro and CapCut, and I’m continuously improving my skills in short-form content, social media reels, sports edits, cinematic videos, captions, transitions and sound design.</p>
+          <ul class="chips">
+            <li>Short-form content</li>
+            <li>Social media reels</li>
+            <li>Sports edits</li>
+            <li>Cinematic videos</li>
+            <li>Captions</li>
+            <li>Transitions</li>
+            <li>Sound design</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section section-alt" id="skills">
+      <div class="wrap">
+        <h2 class="title reveal">SKILLS</h2>
+
+        <!-- Featured tools -->
+        <div class="tools reveal">
+          <div class="tool">
+            <span class="tool-mark tool-pr">Pr</span>
+            <div>
+              <strong>Adobe Premiere Pro</strong>
+              <small>Main editing software</small>
+            </div>
+          </div>
+          <div class="tool">
+            <span class="tool-mark tool-cc">
+              <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 4h24v24H4z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 28 28 4" stroke="currentColor" stroke-width="2"/><path d="M4 20 20 4M12 28 28 12" stroke="currentColor" stroke-width="1" opacity=".5"/></svg>
+            </span>
+            <div>
+              <strong>CapCut</strong>
+              <small>Short-form &amp; social edits</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-grid">
+          <article class="skill reveal"><svg><use href="#i-scissors"/></svg><h3>Video Editing</h3></article>
+          <article class="skill reveal"><svg><use href="#i-phone"/></svg><h3>Instagram Reels</h3></article>
+          <article class="skill reveal"><svg><use href="#i-play"/></svg><h3>YouTube Editing</h3></article>
+          <article class="skill reveal"><svg><use href="#i-film"/></svg><h3>Cinematic Editing</h3></article>
+          <article class="skill reveal"><svg><use href="#i-ball"/></svg><h3>Sports Editing</h3></article>
+          <article class="skill reveal"><svg><use href="#i-caption"/></svg><h3>Captions &amp; Subtitles</h3></article>
+          <article class="skill reveal"><svg><use href="#i-color"/></svg><h3>Color Correction</h3></article>
+          <article class="skill reveal"><svg><use href="#i-sound"/></svg><h3>Sound Design</h3></article>
+          <article class="skill reveal"><svg><use href="#i-trans"/></svg><h3>Transitions</h3></article>
+          <article class="skill reveal"><svg><use href="#i-motion"/></svg><h3>Basic Motion Graphics</h3></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PORTFOLIO ===== -->
+    <section class="section" id="work">
+      <div class="wrap">
+        <h2 class="title reveal">MY EDITS</h2>
+
+ 
+        <div class="grid">
+
+<article class="card reveal"
+  data-video="https://drive.google.com/file/d/1lwdUd6la_HkARNsEov810sV38qixo6Bo/view?usp=drive_link"
+  data-title="content creation">
+
+    <div class="thumb t1" style="--img:url('video/image/my-thumbnail.jpg')">
+
+        <span class="fmt">9:16</span>
+
+        <span class="play">
+            <svg>
+                <use href="#i-play-solid"></use>
+            </svg>
+        </span>
+
+    </div>
+
+    <div class="card-body">
+
+        <h3>content creation</h3>
+
+        <ul class="tags">
+      <li>Dynamic captions</li>
+      <li>B-roll</li>
+      <li>Zoom effects</li>
+      <li>Sound effects</li>
+        </ul>
+
+        <p class="soft">
+            Software: Premiere Pro
+        </p>
+
+        <button
+            class="btn btn-primary btn-sm watch"
+            type="button">
+            WATCH EDIT
+        </button>
+
+    </div>
+
+</article>
+
+         <article class="card reveal"
+  data-video="https://drive.google.com/file/d/1omYKgLWWmKYncXfopg59rCCqshtIjBf6/view?usp=drive_link"
+  data-title="Youtube edit">
+
+    <div class="thumb t2" style="--img:url('video/image/mgsqu.jpg')">
+        <span class="fmt">9:16</span>
+
+        <span class="play">
+            <svg>
+                <use href="#i-play-solid"></use>
+            </svg>
+        </span>
+    </div>
+
+    <div class="card-body">
+        <h3>Youtube Edit</h3>
+
+        <ul class="tags">
+            <li>Cinematic color grading</li>
+            <li>Slow motion</li>
+            <li>Sound design</li>
+            <li>Dramatic transitions</li>
+        </ul>
+
+        <p class="soft">Software: Premiere Pro</p>
+
+        <button class="btn btn-primary btn-sm watch" type="button">
+            WATCH EDIT
+        </button>
+    </div>
+
+</article>
+
+<article class="card reveal"
+  data-video="https://drive.google.com/file/d/1QZS0RIQ0mupdAbM9zv_DaYiOoaCKgqnX/view?usp=drive_link"
+  data-title="Broadcast Edit">
+
+  <div class="thumb t3" style="--img:url('video/image/broadcast-thumbnail.jpg')">
+
+    <span class="fmt">9:16</span>
+
+    <span class="play">
+      <svg>
+        <use href="#i-play-solid"/>
+      </svg>
+    </span>
+
+  </div>
+
+  <div class="card-body">
+
+    <h3>Broadcast Edit</h3>
+
+    <ul class="tags">
+      <li>Dynamic captions</li>
+      <li>B-roll</li>
+      <li>Zoom effects</li>
+      <li>Sound effects</li>
+    </ul>
+
+    <p class="soft">Software: Premiere Pro, CapCut</p>
+
+    <button class="btn btn-primary btn-sm watch" type="button">
+      WATCH EDIT
+    </button>
+
+  </div>
+</article>
+
+<article class="card reveal"
+  data-video="https://drive.google.com/file/d/1Bqa7u56fpTjaJ_w4IecrDuNHwuiPi2gF/view?usp=drive_link"
+  data-title="Social media edit">
+
+  <div class="thumb t4" style="--img:url('video/image/cricket_edit_thumbnail.jpg')">
+    <span class="fmt">9:16</span>
+
+    <span class="play">
+      <svg>
+        <use href="#i-play-solid"/>
+      </svg>
+    </span>
+  </div>
+
+  <div class="card-body">
+    <h3>Social media edit</h3>
+
+    <ul class="tags">
+   <li>Fast cuts</li>
+   <li>Beat synchronization</li>
+   <li>Sports transitions</li>
+    <li>Crowd atmosphere</li>  
+    </ul>
+
+    <p class="soft">Software: Premiere Pro</p>
+
+    <button class="btn btn-primary btn-sm watch" type="button">
+      WATCH EDIT
+    </button>
+  </div>
+
+</article>
+
+         <article class="card reveal"
+  data-video="https://drive.google.com/file/d/1q9phOqr7tfZ5x7s_KzR6wmPc9h7ER7Pm/view?usp=drive_link"
+  data-title="AI Edit">
+            <div class="thumb t5" style="--img:url('video/image/ai_edit_thumbnail.jpg')">
+              <span class="fmt">9:16</span>
+              <span class="play"><svg><use href="#i-play-solid"/></svg></span>
+            </div>
+            <div class="card-body">
+              <h3>AI Edit</h3>
+              <ul class="tags"><li>Product close-ups</li><li>Cinematic lighting</li><li>Commercial-style editing</li><li>Music synchronization</li></ul>
+              <p class="soft">Software: Premiere Pro</p>
+              <button class="btn btn-primary btn-sm watch" type="button">WATCH EDIT</button>
+            </div>
+          </article>
+
+<article class="card reveal"
+  data-video="https://drive.google.com/file/d/18c2TMDxTIgt1AzkKUhtby5rZcvbVwqDv/view?usp=drive_link"
+  data-title="cinematic Edit">
+    <div class="thumb t6" style="--img:url('video/image/cinematic.jpg')">
+        <span class="fmt">16:9</span>
+        <span class="play">
+            <svg><use href="#i-play-solid"/></svg>
+        </span>
+    </div>
+
+    <div class="card-body">
+        <h3>cinematic edit</h3>
+        <ul class="tags">
+            <li>Beat cuts</li>
+            <li>Speed ramps</li>
+            <li>Motion effects</li>
+            <li>High-energy editing</li>
+        </ul>
+        <p class="soft">Software: CapCut</p>
+        <button class="btn btn-primary btn-sm watch" type="button">
+            WATCH EDIT
+        </button>
+    </div>
+</article>
+
+        </div>
+      </div>
+    </section>
+
+   <div class="compare reveal" id="compare" style="--pos:50%">
+
+  <!-- FINAL VIDEO -->
+  <div class="layer layer-final">
+    <video
+      class="compare-video"
+      src="video/final.mp4"
+      muted
+      loop
+      autoplay
+      playsinline>
+    </video>
+
+    <div class="cap-demo"></div>
+    <span class="label label-final">FINAL EDIT</span>
+  </div>
+
+  <!-- RAW VIDEO -->
+  <div class="layer layer-raw">
+    <video
+      class="compare-video"
+      src="video/raw.mp4"
+      muted
+      loop
+      autoplay
+      playsinline>
+    </video>
+
+    <span class="label label-raw">RAW FOOTAGE</span>
+  </div>
+
+  <!-- SLIDER -->
+  <div class="divider" aria-hidden="true">
+    <span></span>
+  </div>
+
+  <input
+    type="range"
+    min="0"
+    max="100"
+    value="50"
+    id="compareRange"
+    aria-label="Compare raw footage and final edit"
+  />
+
+</div>
+
+    <!-- ===== WORKFLOW ===== -->
+    <section class="section" id="workflow">
+      <div class="wrap">
+        <h2 class="title reveal">EDITING WORKFLOW</h2>
+
+        <ol class="flow reveal">
+          <li style="--i:0"><span class="flow-ico"><svg><use href="#i-camera"/></svg></span><b>RAW FOOTAGE</b></li>
+          <li style="--i:1"><span class="flow-ico"><svg><use href="#i-scissors"/></svg></span><b>CUT</b></li>
+          <li style="--i:2"><span class="flow-ico"><svg><use href="#i-color"/></svg></span><b>COLOR</b></li>
+          <li style="--i:3"><span class="flow-ico"><svg><use href="#i-sound"/></svg></span><b>SOUND</b></li>
+          <li style="--i:4"><span class="flow-ico"><svg><use href="#i-caption"/></svg></span><b>CAPTIONS</b></li>
+          <li style="--i:5"><span class="flow-ico"><svg><use href="#i-export"/></svg></span><b>FINAL EXPORT</b></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== SOFTWARE ===== -->
+    <section class="section section-alt" id="software">
+      <div class="wrap">
+        <h2 class="title reveal">SOFTWARE</h2>
+
+        <div class="soft-grid">
+          <article class="soft-card reveal">
+            <div class="soft-visual soft-pr" aria-hidden="true">
+              <div class="mock-panel">
+                <div class="mock-row"><i style="width:34%"></i><i style="width:20%"></i><i style="width:30%"></i></div>
+                <div class="mock-row"><i style="width:18%"></i><i style="width:44%"></i><i style="width:22%"></i></div>
+                <div class="mock-row mock-audio"><i style="width:80%"></i></div>
+                <div class="mock-head"></div>
+              </div>
+              <span class="tool-mark tool-pr big">Pr</span>
+            </div>
+            <h3>Adobe Premiere Pro</h3>
+            <p>Video Editing • Color • Audio • Motion</p>
+          </article>
+
+          <article class="soft-card reveal">
+            <div class="soft-visual soft-cc" aria-hidden="true">
+              <div class="mock-phone">
+                <div class="mock-screen"><span class="mock-caption">Hook first.</span></div>
+                <div class="mock-bar"><i></i></div>
+              </div>
+              <span class="tool-mark tool-cc big">
+                <svg viewBox="0 0 32 32"><path d="M4 4h24v24H4z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 28 28 4" stroke="currentColor" stroke-width="2"/><path d="M4 20 20 4M12 28 28 12" stroke="currentColor" stroke-width="1" opacity=".5"/></svg>
+              </span>
+            </div>
+            <h3>CapCut</h3>
+            <p>Short-form Editing • Captions • Social Media</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section contact" id="contact">
+      <div class="contact-glow" aria-hidden="true"></div>
+      <div class="wrap contact-in">
+        <h2 class="title title-xl reveal">LET’S CREATE SOMETHING</h2>
+        <p class="lead reveal">Looking for a fresher video editor for reels, social media content, YouTube videos or creative projects?</p>
+
+        <!-- CHANGE THESE 3 LINKS TO YOUR OWN -->
+<div class="contact-btns reveal">
+
+    <a
+        class="btn btn-primary"
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=devabright18@gmail.com&su=Video%20Editing%20Inquiry"
+        target="_blank"
+        rel="noopener"
+    >
+        EMAIL ME
+    </a>
+
+    <a
+        class="btn btn-ghost"
+        href="https://www.instagram.com/mr__heidi?stkn=emhxZWx2a3NzZHd0"
+        target="_blank"
+        rel="noopener"
+    >
+        INSTAGRAM
+    </a>
+
+    <a
+        class="btn btn-ghost"
+        href="https://www.linkedin.com/in/devabright"
+        target="_blank"
+        rel="noopener"
+    >
+        LINKEDIN
+    </a>
+
+</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap foot-in">
+      <span>© <span id="year">2026</span> Deva Bright D</span>
+      <span>Video Editor</span>
+    </div>
+  </footer>
+
+  <!-- ===== FULLSCREEN VIDEO MODAL ===== -->
+  <dialog class="modal" id="modal" aria-label="Video player">
+    <button class="modal-close" id="modalClose" type="button" aria-label="Close video">
+      <span></span><span></span>
+    </button>
+    <p class="modal-title" id="modalTitle"></p>
+    <div class="modal-stage" id="modalStage"></div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
